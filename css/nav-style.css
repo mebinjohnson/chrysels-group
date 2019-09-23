@@ -61,7 +61,7 @@ nav .logo {
 
 .responsive {
   display: none;
-  col
+  color:#ee3938;
   font-size: 23px;
 }
 
@@ -178,7 +178,7 @@ nav .logo {
 }
 
 .nav-menu ul li:hover {
-  background: #4DC7A0;
+  background: #ee3938;
   color: #f2f2f2;
   transition: 0.3s;
 }
