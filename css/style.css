@@ -653,7 +653,14 @@ margin-bottom: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 48px;
+  overflow: hidden;
+  width: 50px;
+  color: #ee3938;
+}
+
+#facts .counters plus {
   display: block;
+  float: left;
   color: #ee3938;
 }
 

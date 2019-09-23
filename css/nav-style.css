@@ -49,7 +49,7 @@ nav ul li a {
   text-transform: capitalize;
 }
 
-.logo {
+nav .logo {
   float: left;
 }
 
@@ -61,6 +61,7 @@ nav ul li a {
 
 .responsive {
   display: none;
+  col
   font-size: 23px;
 }
 
