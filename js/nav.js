@@ -69,11 +69,11 @@
   // ========================================================================= //
   //  // RESPONSIVE MENU
   // ========================================================================= //
-  $('.nav-menu').slideToggle();
+  // $('.nav-menu').slideToggle();
   $('.responsive').on('click', function(e) {
     $('.nav-menu').slideToggle();
+    $('.animated-icon').toggleClass('open');
   });
-
 
 
 })(jQuery);
