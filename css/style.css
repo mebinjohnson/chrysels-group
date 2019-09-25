@@ -1300,18 +1300,22 @@ h6 {
     margin-right: 20px;
     border: 10px solid white;
 }
+@media (max-width: 768px){
+    #history .div-img-bg {
+        overflow: hidden;
+    }
+}
 
 #history .about-container .background {
-    width: 100%;
-    min-width: 500px;
     height: 400px;
+    min-width: 500px;
+    overflow: hidden;
     float: left;
     background: url(../img/about-plan.jpg) center top no-repeat;
     margin-bottom: 10px;
     box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
     margin-top: -60px;
     margin-left: 30px;
-
     object-fit: cover;
 }
 
@@ -1320,7 +1324,7 @@ h6 {
 }
 
 #history .about-container .title {
-    color: #333;
+    color: #FFFFFF;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 32px;
