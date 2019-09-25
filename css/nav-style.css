@@ -51,6 +51,24 @@ nav ul li a {
 
 nav .logo {
   float: left;
+  display: none;
+}
+
+nav .logo-mobile {
+  float: left;
+}
+
+@media (min-width: 768px) {
+  nav .logo-mobile{
+    display: none;
+  }
+  .responsive{
+    display: none;
+  }
+  nav .logo{
+    display: block;
+  }
+  
 }
 
 .logo img {
@@ -60,8 +78,9 @@ nav .logo {
 }
 
 .responsive {
-  display: none;
+  display: block;
   color:#ee3938;
+  float: right;
   font-size: 23px;
 }
 
@@ -98,6 +117,13 @@ nav .logo {
 
 .nav-menu > li {
   float: left;
+}
+
+@media (max-width: 768px) {
+  .nav-menu > li {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .nav-menu li:hover > ul,
