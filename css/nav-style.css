@@ -61,6 +61,11 @@ nav .logo-mobile {
     color: #ee3938;
     float: right;
     font-size: 23px;
+    user-select: none;
+}
+
+.responsive:focus{
+    outline: 0;
 }
 
 @media (min-width: 768px) {

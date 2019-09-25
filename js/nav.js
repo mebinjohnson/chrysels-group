@@ -15,6 +15,7 @@
 
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
+        $('.animated-icon').toggleClass('open');
         $(document).off("scroll");
 
         $('a').each(function () {
