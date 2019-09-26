@@ -2880,7 +2880,7 @@
     if (!isRequired) {
       var _requesting = '`' + requestingName + '`';
       var requested = '`' + requestedName + '`';
-      console.warn(requested + ' modifier is required by ' + _requesting + ' modifier in order to work, be sure to include it before ' + _requesting + '!');
+      console.warn(requested + ' modifier is required by ' + _requesting + ' modifier in order to work.jpg, be sure to include it before ' + _requesting + '!');
     }
     return isRequired;
   }
@@ -2895,7 +2895,7 @@
   function arrow(data, options) {
     var _data$offsets$arrow;
 
-    // arrow depends on keepTogether in order to work
+    // arrow depends on keepTogether in order to work.jpg
     if (!isModifierRequired(data.instance.modifiers, 'arrow', 'keepTogether')) {
       return data;
     }
@@ -3682,7 +3682,7 @@
      * Modifier used to flip the popper's placement when it starts to overlap its
      * reference element.
      *
-     * Requires the `preventOverflow` modifier before it in order to work.
+     * Requires the `preventOverflow` modifier before it in order to work.jpg.
      *
      * **NOTE:** this modifier will interrupt the current update cycle and will
      * restart it if it detects the need to flip the placement.
@@ -3739,7 +3739,7 @@
      * be used to hide with a CSS selector the popper when its reference is
      * out of boundaries.
      *
-     * Requires the `preventOverflow` modifier before it in order to work.
+     * Requires the `preventOverflow` modifier before it in order to work.jpg.
      * @memberof modifiers
      * @inner
      */
@@ -3802,7 +3802,7 @@
      * want to delegate all the DOM manipulations to it.
      *
      * Note that if you disable this modifier, you must make sure the popper element
-     * has its position set to `absolute` before Popper.js can do its work!
+     * has its position set to `absolute` before Popper.js can do its work.jpg!
      *
      * Just disable this modifier and define your own to achieve the desired effect.
      *
