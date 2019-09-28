@@ -1,14 +1,24 @@
 (function ($) {
     "use strict";
-
     // Preloader
-    $(window).on('load', function () {
-        if ($('#preloader').length) {
-            $('#preloader').delay(0).fadeOut('slow', function () {
-                $(this).remove();
-            });
-        }
-    });
+    if(
+        (screen.width <= 640) ||
+        (window.matchMedia &&
+            window.matchMedia('only screen and (max-width: 640px)').matches
+        )
+
+    ){
+        $('#preloader').remove();
+    }
+    else{
+        $(window).on('load', function () {
+            if ($('#preloader').length) {
+                $('#preloader').delay(0).fadeOut('slow', function () {
+                    $(this).remove();
+                });
+            }
+        });
+    }
 
     // Back to top button
     $(window).scroll(function () {
