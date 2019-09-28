@@ -1061,7 +1061,7 @@ h6 {
     font-size: 15px;
 }
 
-#contact .form button[type="submit"] {
+#contact .form input[type="submit"] {
     background: #ee3938;
     padding: 10px 30px;
     color: #fff;
@@ -1071,7 +1071,7 @@ h6 {
     cursor: pointer;
 }
 
-#contact .form button[type="submit"]:hover {
+#contact .form input[type="submit"]:hover {
     background: #FFFFFF;
     color: #ee3938;
     border-color: #ee3938;
