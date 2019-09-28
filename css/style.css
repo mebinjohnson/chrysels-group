@@ -343,7 +343,13 @@ h6 {
 --------------------------------*/
 
 #featured-services {
-    background: #ee3938;
+    background: linear-gradient(90deg, #ee3938 50%, #1b345e 50%);
+}
+
+@media (max-width: 768px) {
+    #featured-services {
+        background: #ee3938;
+    }
 }
 
 #featured-services .box {
@@ -351,7 +357,10 @@ h6 {
 }
 
 #featured-services .box-bg {
-    background: black;
+    background: #1b345e;
+}
+#featured-services .box-bg-red {
+    background: #ee3938;
 }
 
 #featured-services i {
