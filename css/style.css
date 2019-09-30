@@ -1,11 +1,40 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+    font-family: Poppins-Light;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Black;
+    src: url(../fonts/Poppins-Black.ttf);
+}
 
 body {
     background: #fff;
     color: #666666;
-    font-family: "Open Sans", sans-serif;
+    font-family: Poppins-Regular, sans-serif;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-y: hidden;
+    }
 }
 
 a {
@@ -33,10 +62,19 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Montserrat", sans-serif;
+    font-family: Poppins-Medium, sans-serif;
     font-weight: 400;
     margin: 0 0 20px 0;
     padding: 0;
+}
+h1,
+h2,
+h3
+{
+    font-family: Poppins-Bold, sans-serif;
+}
+p {
+    font-family: Poppins-Light;
 }
 
 /* Back to top button */
@@ -65,7 +103,7 @@ h6 {
 }
 
 .btn-round {
-    font-family: "Montserrat", sans-serif;
+    font-family: Poppins-Medium, sans-serif;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 1px;
@@ -265,7 +303,7 @@ h6 {
 }
 
 #intro .btn-get-started {
-    font-family: "Montserrat", sans-serif;
+    font-family: Poppins-Medium, sans-serif;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 1px;
@@ -307,7 +345,7 @@ h6 {
     width: 120px;
     height: 1px;
     background: #ddd;
-    bottom: 1px;
+    bottom: 2px;
     left: calc(50% - 60px);
 }
 
@@ -315,8 +353,8 @@ h6 {
     content: '';
     position: absolute;
     display: block;
-    width: 40px;
-    height: 3px;
+    width: 50px;
+    height: 5px;
     background: #ee3938;
     bottom: 0;
     left: calc(50% - 20px);
@@ -356,9 +394,11 @@ h6 {
     padding: 30px 20px;
 }
 
+
 #featured-services .box-bg {
     background: #1b345e;
 }
+
 #featured-services .box-bg-red {
     background: #ee3938;
 }
@@ -372,16 +412,14 @@ h6 {
 
 #featured-services h4 {
     font-weight: 400;
+    font-family: Poppins-Bold;
     margin: 15px 0;
     font-size: 18px;
 }
 
 #featured-services h4 a {
     color: #fff;
-}
 
-#featured-services h4 a:hover {
-    color: #ee3938;
 }
 
 #featured-services p {
@@ -622,7 +660,7 @@ h6 {
 }
 
 #call-to-action .cta-btn {
-    font-family: "Montserrat", sans-serif;
+    font-family: Poppins-Medium, sans-serif;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 16px;
@@ -668,7 +706,7 @@ h6 {
 }
 
 #facts .counters span {
-    font-family: "Montserrat", sans-serif;
+    font-family: Poppins-Medium, sans-serif;
     font-weight: bold;
     font-size: 48px;
     overflow: hidden;
@@ -685,7 +723,7 @@ h6 {
 #facts .counters p {
     padding: 0;
     margin: 0 0 20px 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: Poppins-Light, sans-serif;
     font-size: 14px;
     color: #111;
 }
@@ -800,16 +838,18 @@ h6 {
 
 #portfolio .portfolio-item figure .link-details {
     right: calc(50% - 38px);
+    visibility: hidden;
     top: calc(50% - 18px);
 }
 
 #portfolio .portfolio-item figure:hover .link-preview {
     opacity: 1;
-    left: calc(50% - 44px);
+    left: calc(50% - 18px);
 }
 
 #portfolio .portfolio-item figure:hover .link-details {
     opacity: 1;
+    visibility: hidden;
     right: calc(50% - 44px);
 }
 
