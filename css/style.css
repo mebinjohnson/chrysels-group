@@ -77,6 +77,9 @@ p {
     font-family: Poppins-Light;
 }
 
+.img-fluid{
+    background-size: cover;
+}
 /* Back to top button */
 
 .back-to-top {
@@ -1245,9 +1248,10 @@ p {
 }
 
 #about .about-container .background {
+    background: url(../img/work.jpg) no-repeat center center;
     min-height: 300px;
-    background: url(../img/work.jpg) center top no-repeat;
     margin-bottom: 10px;
+    background-size:     cover;
 }
 
 #about .about-container .content {
@@ -1357,6 +1361,7 @@ p {
     float: left;
     background: url(../img/about-plan.jpg) center top no-repeat;
     margin-bottom: 10px;
+    background-size: cover;
     box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
     margin-top: -60px;
     margin-left: 30px;
