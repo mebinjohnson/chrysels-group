@@ -21,14 +21,10 @@
         $(document).off("scroll");
 
         $('a').each(function () {
-            // $(this).parent().removeClass('menu-active');
             if ($(window).width() < 768) {
                 $('.nav-menu').slideUp();
             }
         });
-
-        // $(this).parent().addClass('menu-active');
-
 
         let target = this.hash;
 
