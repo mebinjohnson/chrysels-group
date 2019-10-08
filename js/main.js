@@ -1,16 +1,15 @@
 (function ($) {
     "use strict";
     // Preloader
-    if(
+    if (
         (screen.width <= 640) ||
         (window.matchMedia &&
             window.matchMedia('only screen and (max-width: 640px)').matches
         )
 
-    ){
+    ) {
         $('#preloader').remove();
-    }
-    else{
+    } else {
         $(window).on('load', function () {
             if ($('#preloader').length) {
                 $('#preloader').delay(0).fadeOut('slow', function () {
@@ -34,7 +33,16 @@
     });
 
     // Initiate the wowjs animation library
-    new WOW().init();
+    let wow = new WOW(
+        {
+            boxClass: 'wow',      // default
+            animateClass: 'animated', // default
+            offset: 0,          // default
+            mobile: false,       // default
+            live: true        // default
+        })
+
+    wow.init();
 
 
     // Intro carousel
@@ -71,6 +79,11 @@
     });
 
     // Porfolio isotope and filter
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+    })
+
     var portfolioIsotope = $('.portfolio-container').isotope({
         itemSelector: '.portfolio-item',
         layoutMode: 'fitRows'
@@ -98,6 +111,7 @@
         autoplay: true,
         dots: true,
         loop: true,
+        center: true,
         items: 1
     });
 
