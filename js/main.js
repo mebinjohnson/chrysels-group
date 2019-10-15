@@ -32,6 +32,10 @@
         return false;
     });
 
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
     // Initiate the wowjs animation library
     let wow = new WOW(
         {
@@ -65,6 +69,9 @@
         allowPageScroll: "vertical"
     });
 
+    const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+    observer.observe();
+
     // // Skills section
     // $('#skills').waypoint(function () {
     //     $('.progress .progress-bar').each(function () {
@@ -77,12 +84,6 @@
         delay: 10,
         time: 1000
     });
-
-    // Porfolio isotope and filter
-    lightbox.option({
-        'resizeDuration': 200,
-        'wrapAround': true
-    })
 
     var portfolioIsotope = $('.portfolio-container').isotope({
         itemSelector: '.portfolio-item',

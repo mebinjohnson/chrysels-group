@@ -51,7 +51,7 @@
     // Navigation active state on scroll
     var nav_sections = $('section');
     var main_nav = $('.nav-menu, #mobile-nav');
-    var main_nav_height = $('#header').outerHeight()+500;
+    var main_nav_height = $('#header').outerHeight()+400;
 
     $(window).on('scroll', function () {
         var cur_pos = $(this).scrollTop();
