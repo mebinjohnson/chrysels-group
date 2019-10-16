@@ -4,7 +4,7 @@
     // Initiate superfish on nav menu
     $('.nav-menu').superfish({
         animation: {opacity: 'show'},
-        speed: 400
+        speed: 100
     });
     // ========================================================================= //
     //  //SMOOTH SCROLL
@@ -75,12 +75,9 @@
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll > 100) {
-            $("#main-nav, #main-nav-subpage").slideDown(700);
-            $("#main-nav-subpage").removeClass('subpage-nav');
+            $("#main-nav").slideDown(700);
         } else {
             $("#main-nav").slideUp(700);
-            $("#main-nav-subpage").hide();
-            $("#main-nav-subpage").addClass('subpage-nav');
         }
     });
 

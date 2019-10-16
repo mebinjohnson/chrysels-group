@@ -60,22 +60,6 @@
 		}
 	</script>
 
-
-	<!-- Google Tag Manager -->
-	<!--	<script>(function (w, d, s, l, i) {-->
-	<!--        w[l] = w[l] || [];-->
-	<!--        w[l].push({-->
-	<!--            'gtm.start':-->
-	<!--                new Date().getTime(), event: 'gtm.js'-->
-	<!--        });-->
-	<!--        var f = d.getElementsByTagName(s)[0],-->
-	<!--            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';-->
-	<!--        j.async = true;-->
-	<!--        j.src =-->
-	<!--            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;-->
-	<!--        f.parentNode.insertBefore(j, f);-->
-	<!--    })(window, document, 'script', 'dataLayer', 'GTM-MX5ZLWS');</script>-->
-	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148832995-1"></script>
 	<script>
         window.dataLayer = window.dataLayer || [];
@@ -106,7 +90,7 @@
 	<link href="./lib/fancybox/css/jquery.fancybox.min.css" rel="stylesheet">
 
 	<!-- Main Stylesheet File -->
-	<link href="./css/style.css" rel="stylesheet">
+	<link href="./css/style.min.css" rel="stylesheet">
 	<link href="./css/nav-style.css" rel="stylesheet">
 	<script type="text/javascript" src="./lib/lazyload/lazyload.min.js"></script>
 </head>
@@ -114,29 +98,30 @@
 <body>
 
 <!--Start of Tawk.to Script-->
-<!--<script type="text/javascript">-->
-<!--    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();-->
-<!--    (function () {-->
-<!--        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];-->
-<!--        s1.async = true;-->
-<!--        s1.src = 'https://embed.tawk.to/5d871d549f6b7a4457e2f1a1/default';-->
-<!--        s1.charset = 'UTF-8';-->
-<!--        s1.setAttribute('crossorigin', '*');-->
-<!--        s0.parentNode.insertBefore(s1, s0);-->
-<!--    })();-->
-<!--</script>-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5d871d549f6b7a4457e2f1a1/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
 <!--End of Tawk.to Script-->
 
 <!-- Google Tag Manager (noscript) -->
 <noscript>
 	<iframe height="0"
+			id="google-tag"
 			src="https://www.googletagmanager.com/ns.html?id=GTM-MX5ZLWS" style="display:none;visibility:hidden"
 			width="0"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <header id="header">
-	<nav class="navbar-expand-md" id="main-nav">
+	<nav class="navbar-expand-md .navbar-default" id="main-nav">
 		<div class="row">
 			<div class="container nav-menu-container">
 
@@ -153,21 +138,20 @@
 					<div class="animated-icon"><span></span><span></span><span></span></div>
 				</button>
 
-				<ul class="nav nav-menu list-unstyled navbar-nav mr-auto">
+				<ul class="nav nav-menu list-unstyled navbar-nav mr-auto navbar-default">
 					<li class="nav-link nav-item dropdown"><a>About</a>
 						<ul class="dropdown-menu">
 							<li class="dropdown-item"><a href="#about">Who We Are</a></li>
 							<li class="dropdown-item"><a href="#vision">Mission & Vision</a></li>
 							<li class="dropdown-item"><a href="#history">History</a></li>
-							<li class="dropdown-item"><a href="./day-at-chrysels.html">Our Facility</a></li>
 							<li class="dropdown-item"><a href="./day-at-chrysels.html">Day at Chrysels</a></li>
 						</ul>
 					</li>
-					<!--					<li class="nav-item"><a class="smoothScroll" href="#business">Business</a></li>-->
-					<li class="nav-item dropdown"><a href="./business">Business</a>
+
+					<li class="nav-link nav-item dropdown"><a href="./business">Business</a>
 						<ul class="dropdown-menu">
-							<li class="dropdown-item"><a href="#about">Digital</a></li>
-							<li class="dropdown-item"><a href="#vision">Signboard</a></li>
+							<li class="dropdown-item"><a href="./business/digital.html">Digital</a></li>
+							<li class="dropdown-item"><a href="./business/signage.html">Signboard</a></li>
 							<li class="dropdown-item"><a href="./business/decor.html">Decor</a></li>
 						</ul>
 					</li>
@@ -983,8 +967,6 @@ Our Businesses Section
 <div class="footer" id="footer"></div>
 
 <!-- #footer -->
-
-<!--footer<a class="back-to-top"><i class="fa fa-chevron-up"></i></a>-->
 
 <!-- Uncomment below i you want to use a preloader -->
 <!--<div id="preloader"></div>-->

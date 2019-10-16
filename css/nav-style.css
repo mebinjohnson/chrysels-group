@@ -1,7 +1,6 @@
 /* NAV Section
 --------------------------------*/
 
-
 nav {
     position: fixed;
     background: #fff;
@@ -17,9 +16,6 @@ nav {
 @media (max-width: 768px) {
     nav {
         display: none;
-    }
-    .dropdown-menu {
-        width: 100%;
     }
 }
 
@@ -68,7 +64,7 @@ nav .logo-mobile {
     user-select: none;
 }
 
-.responsive:focus{
+.responsive:focus, .responsive:active{
     outline: 0;
 }
 
@@ -143,9 +139,6 @@ nav .logo-mobile {
     left: 100%;
 }
 
-.nav-menu ul li {
-    min-width: 180px;
-}
 
 /* Nav Menu Arrows */
 
@@ -185,52 +178,73 @@ nav .logo-mobile {
     outline: none;
 }
 
-.nav-menu a:hover,
+.nav-menu .nav-link a:hover,
 .nav-menu li:hover > a,
 .nav-menu .menu-active > a {
     color: #ee3938;
-    text-shadow:0px 0px 1px #ee3938;
-}
-
-.menu-has-children ul li {
-    color: #FFFFFF;
+    text-shadow:0 0 1px #ee3938;
 }
 
 .nav-menu ul {
     margin: 4px 0 0 15px;
-    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
+    /*box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);*/
 }
 
-.nav-menu ul li {
-    background: #fff;
-    padding: 5px;
-    border-top: 0px solid #f4f4f4;
-}
-
-.nav-menu ul li:first-child {
-    border-top: 0;
-}
-
-.nav-menu ul li:hover {
+.nav-menu ul li:hover{
     background: #ee3938;
     color: #f2f2f2;
-    transition: 0.3s;
 }
 
 .nav-menu ul li a {
     color: #333;
     transition: none;
+    font-size: 13px;
     padding: 10px 15px;
 }
 
-.nav-menu ul li a:hover {
+.nav-menu ul li:hover a {
     color: #fff;
 }
 
-.nav-menu ul ul {
+.dropdown .dropdown-menu {
+    border-top: 0;
+    border-right: 0;
+    min-width: 250px;
+    border-bottom: 0;
+    -webkit-transform: translate3d(0px, -40px, 0px);
+    transform: translate3d(0px, -40px, 0px);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    visibility: hidden;
+    transition: all 0.5s cubic-bezier(0.3, 0.65, 0.355, 1) 0s, opacity 0.31s ease 0s, height 0s linear 0.36s;
     margin: 0;
+    border-radius: 0;
+    padding: 12px 0;
 }
 
+.navbar-default .dropdown .dropdown-menu .dropdown-item {
+    padding: 8px 18px;
+    transition: all 500ms ease;
+    width: 100%;
+    min-width: 220px;
+}
+
+.navbar-default .dropdown .dropdown-menu .dropdown-item a:hover {
+    color: #FFFFFF;
+}
+
+/*.navbar-default .dropdown .dropdown-menu .dropdown-item:hover {*/
+/*    color: #ee3938;*/
+/*    transition: all 600ms ease;*/
+/*}*/
+
+.navbar-default .dropdown:hover .dropdown-menu {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    visibility: visible;
+    opacity: 1;
+    filter: alpha(opacity=1);
+}
 
 /*Animated Icon*/
 
