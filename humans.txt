@@ -3,13 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+Your title: Mebin Johnson
+Site: mebinjohnson.com
+Twitter: mebinjohnson
+Location: Dubai, United Arab Emirates
 
-# THANKS
-
-    <name>
-
-# TECHNOLOGY COLOPHON
-
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+Standards: HTML5, CSS3
+Components: Bootstrap, jQuery, bootstrapmade.com, FancyBox
+Software: WebStorm
