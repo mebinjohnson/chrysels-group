@@ -1,22 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+
     <url>
-        <loc>http://chrysels.com/</loc>
-        <lastmod>2019-09-28T16:28:22+00:00</lastmod>
+        <loc>http://www.chrysels.com/</loc>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>http://chrysels.com/day-at-chrysels</loc>
+        <loc>http://www.chrysels.com/gallery</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://chrysels.com/contact</loc>
+        <loc>http://www.chrysels.com/careers</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.chrysels.com/contact</loc>
         <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>http://www.chrysels.com/day-at-chrysels</loc>
+        <priority>0.50</priority>
+    </url>
+    <url>
+        <loc>http://www.chrysels.com/business/</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.chrysels.com/business/digital</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.chrysels.com/business/signage</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.chrysels.com/business/decor</loc>
+        <priority>0.80</priority>
     </url>
 
 </urlset>

@@ -34,7 +34,7 @@
 
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
-    })
+    });
 
     // Initiate the wowjs animation library
     let wow = new WOW(
@@ -44,7 +44,7 @@
             offset: 0,          // default
             mobile: false,       // default
             live: true        // default
-        })
+        });
 
     wow.init();
 

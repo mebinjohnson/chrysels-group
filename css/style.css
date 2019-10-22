@@ -176,6 +176,42 @@ p {
 /*    }*/
 /*}*/
 
+.whats-float{
+    position:fixed;
+    width:40px;
+    height:60px;
+    bottom:60%;
+    right:0;
+    overflow: hidden;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:10px 0 0 10px;
+    text-align:center;
+    font-size:28px;
+    z-index:100;
+}
+
+.whats-float:hover{
+    width: 70px;
+    color: #FFFFFF;
+}
+
+.my-float{
+    margin-top:16px;
+}
+
+.whats-tooltip + .tooltip.top > .tooltip-arrow {background-color: #25d366;}
+
+
+.tooltip-inner {
+    background-color: #ff4343;
+}
+.tooltip-arrow {
+    border-color: #ff4343;
+    background-color: #ff4343;
+    color: #ff4343;
+}
+
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
@@ -222,7 +258,7 @@ p {
     border-left: 0;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .top-bar {
         display: none;
     }
@@ -283,32 +319,52 @@ p {
     text-align: center;
 }
 
-#intro h2 {
+#intro h1 , #intro h2 {
     color: #fff;
     margin-bottom: 30px;
-    font-size: 48px;
+    font-size: 2rem;
     font-weight: 700;
 }
 
 #intro p {
-    width: 80%;
+    width: 85%;
     margin: 0 auto 30px auto;
     color: #fff;
 }
 
+@media (max-width: 512px){
+    #intro h1 , #intro h2 {
+        color: #fff;
+        font-size: 18px;
+    }
+    #intro p {
+        font-size: 12px;
+    }
+}
+
 
 #intro .intro-logo-banner-float {
-    height: 45vh;
+    height: 40vh;
     z-index: 99;
     width: 100%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
     position: absolute;
-    margin-top: -30vh;
+    margin: -28vh auto 20px;
 }
 
+@media (max-width: 1024px) and (min-width: 768px) {
+    #intro .intro-logo-banner-float {
+        height: 30vh;
+        margin: -20vh auto 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #intro .intro-logo-banner-float {
+        height: 30vh;
+        margin: -20vh auto 20px;
+    }
+}
 
 #intro .carousel-fade {
     overflow: hidden;
@@ -435,7 +491,7 @@ p {
     font-size: 3rem;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .intro-single .title-single-box .title-single2 {
         max-width: 90vw;
         margin-left: -30px;
@@ -853,7 +909,7 @@ p {
     position: relative;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     #facts {
         background: url("../img/building-painted.jpg") center top no-repeat fixed;
         background-size: cover;
@@ -974,7 +1030,7 @@ p {
     padding: 0;
 }
 
-#gallery .portfolio-wrap img{
+#gallery .portfolio-wrap img {
     min-height: 360px;
     position: absolute;
     height: 100%;
