@@ -7,7 +7,7 @@ nav {
     z-index: 1000;
     width: 100%;
     padding: 10px;
-    display: none;
+    display: block;
     -webkit-box-shadow: 0 2px 92px 0 rgba(0, 0, 0, 0.18);
     -moz-box-shadow: 0 2px 92px 0 rgba(0, 0, 0, 0.18);
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.25);
@@ -43,6 +43,8 @@ nav ul li a {
 nav .logo {
     float: left;
     display: none;
+    height: 100%;
+    margin-top: 3px;
     margin-left: 30px;
 }
 
@@ -59,12 +61,6 @@ nav .logo-mobile {
 
 .responsive:focus, .responsive:active {
     outline: 0;
-}
-
-@media (max-width: 768px) {
-    nav {
-        display: none;
-    }
 }
 
 @media (min-width: 768px) {

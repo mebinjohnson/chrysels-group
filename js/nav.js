@@ -2,10 +2,15 @@
     "use strict";
 
     // Initiate superfish on nav menu
-    $('.nav-menu').superfish({
-        animation: {opacity: 'show'},
-        speed: 100
+    $("#main-nav").css("display","none");
+    $(window).ready(function() {
+        $('#nav-menu').superfish({
+            animation: {opacity: 'show'},
+            speed: 100
+        });
+        $("#main-nav").css("display","none");
     });
+
     // ========================================================================= //
     //  //SMOOTH SCROLL
     // ========================================================================= //
@@ -13,16 +18,16 @@
 
     $(document).on("scroll", onScroll);
 
-    $('a[href^="#"]').on('click', function (e) {
+    $('a[href^="/#"]').on('click', function (e) {
         e.preventDefault();
         if ($(this).parent('li').length) {
-            $('.animated-icon').toggleClass('open');
+            $('#animated-icon').toggleClass('open');
         }
         $(document).off("scroll");
 
         $('a').each(function () {
             if ($(window).width() < 768) {
-                $('.nav-menu').slideUp();
+                $('#nav-menu').slideUp();
             }
         });
 
@@ -50,7 +55,7 @@
 
     // Navigation active state on scroll
     var nav_sections = $('section');
-    var main_nav = $('.nav-menu, #mobile-nav');
+    var main_nav = $('#nav-menu, #mobile-nav');
     var main_nav_height = $('#header').outerHeight()+400;
 
     $(window).on('scroll', function () {
@@ -84,10 +89,12 @@
     // ========================================================================= //
     //  // RESPONSIVE MENU
     // ========================================================================= //
-    // $('.nav-menu').slideToggle();
-    $('.responsive').on('click', function (e) {
-        $('.nav-menu').slideToggle();
-        $('.animated-icon').toggleClass('open');
+
+    // $('#navbar-toggler').on('click', function (e) {
+    $(document).on('click', '#navbar-toggler', function(e) {
+        e.preventDefault();
+        $('#nav-menu').slideToggle();
+        $('#animated-icon').toggleClass('open');
     });
 
 

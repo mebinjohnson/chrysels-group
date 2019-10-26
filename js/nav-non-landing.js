@@ -1,11 +1,17 @@
 (function ($) {
     "use strict";
-
+    $("#main-nav").css("display","block");
+    // $("#main-nav, #main-nav-subpage").slideDown(700);
     // Initiate superfish on nav menu
-    $('.nav-menu').superfish({
-        animation: {opacity: 'show'},
-        speed: 400
+    $(window).ready(function() {
+        $('#nav-menu').superfish({
+            animation: {opacity: 'show'},
+            speed: 100
+        });
+        // $("#main-nav, #main-nav-subpage").slideDown(700);
+        $("#main-nav").css("display","block");
     });
+
     // ========================================================================= //
     //  //SMOOTH SCROLL
     // ========================================================================= //
@@ -47,52 +53,18 @@
             });
         }
     }
-    // // Navigation active state on scroll
-    // var nav_sections = $('section');
-    // var main_nav = $('.nav-menu, #mobile-nav');
-    // var main_nav_height = $('#header').outerHeight()+500;
-    //
-    // $(window).on('scroll', function () {
-    //     var cur_pos = $(this).scrollTop();
-    //
-    //     nav_sections.each(function() {
-    //         var top = $(this).offset().top - main_nav_height,
-    //             bottom = top + $(this).outerHeight();
-    //
-    //         if (cur_pos >= top && cur_pos <= bottom) {
-    //             main_nav.find('li').removeClass('menu-active menu-item-active');
-    //             main_nav.find('a[href="#'+$(this).attr('id')+'"]').parent('li').addClass('menu-active menu-item-active');
-    //         }
-    //     });
-    // });
 
     // ========================================================================= //
     //  //NAVBAR SHOW - HIDE
     // ========================================================================= //
-    $("#main-nav, #main-nav-subpage").slideDown(700);
-    $("#main-nav-subpage").removeClass('subpage-nav');
 
-    // $(window).scroll(function () {
-    //     var scroll = $(window).scrollTop();
-    //     if (scroll > 100) {
-    //         $("#main-nav, #main-nav-subpage").slideDown(700);
-    //         $("#main-nav-subpage").removeClass('subpage-nav');
-    //     } else {
-    //         $("#main-nav").slideUp(700);
-    //         $("#main-nav-subpage").hide();
-    //         $("#main-nav-subpage").addClass('subpage-nav');
-    //     }
-    // });
 
-    // ========================================================================= //
-    //  // RESPONSIVE MENU
-    // ========================================================================= //
-    // $('.nav-menu').slideToggle();
-    $('.responsive').on('click', function (e) {
-        $('.nav-menu').slideToggle();
-        $('.animated-icon').toggleClass('open');
+
+    $(document).on('click', '#navbar-toggler', function(e) {
+        e.preventDefault();
+        $('#nav-menu').slideToggle();
+        $('#animated-icon').toggleClass('open');
     });
 
 
 })(jQuery);
-
