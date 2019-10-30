@@ -36,6 +36,8 @@
         $('[data-toggle="tooltip"]').tooltip()
     });
 
+
+
     // Initiate the wowjs animation library
     let wow = new WOW(
         {

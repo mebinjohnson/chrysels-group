@@ -82,20 +82,26 @@
 	</script>
 	<!-- End Google Tag Manager -->
 
+
 	<link href="https://www.chrysels.com/" rel="canonical"/>
 
 	<!-- Favicon -->
 	<link href="/favicon.ico" rel="icon">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+	<link rel="manifest" href="/manifest.json">
 
 	<!-- Bootstrap CSS File -->
 	<link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Libraries CSS Files -->
 	<link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<link href="/lib/animate/animate.min.css" rel="stylesheet">
 	<link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-	<link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-	<link href="/lib/fancybox/css/jquery.fancybox.min.css" rel="stylesheet">
+<!--	<link href="/lib/animate/animate.min.css" rel="stylesheet">-->
+<!--	<link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">-->
+<!--	<link href="/lib/fancybox/css/jquery.fancybox.min.css" rel="stylesheet">-->
+
+	<link href="/lib/compressed.min.css" rel="stylesheet">
 
 	<!-- Main Stylesheet File -->
 	<link href="/css/style.min.css" rel="stylesheet">
@@ -126,21 +132,9 @@
 </script>
 <!--End of Tawk.to Script-->
 
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-	<iframe height="0"
-			id="google-tag"
-			src="https://www.googletagmanager.com/ns.html?id=GTM-MX5ZLWS" style="display:none;visibility:hidden"
-			width="0"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
-
 <header id="header">
 	<script>
-        $("#header").load("/nav.html");
-        // $(window).ready(function ($) {
-        //     $('li.nav-item a[href*="contact"]').parent('li').addClass('menu-active');
-        // });
+        $("#header").load("/nav");
 	</script>
 </header>
 
@@ -173,7 +167,7 @@ Intro Section
 		 src="./img/logos/group-logo-white.svg"
 		 title="Chrysels Group">
 <div class="text-center">
-	<a class=" btn-get-started scrollto center-block" href="#featured-services">Know More<i class="fa fa-chevron-down"></i></a>
+	<a class="btn-get-started scrollto" href="#featured-services">Know More<i class="fa fa-chevron-down"></i></a>
 </div>
 
 
@@ -946,7 +940,7 @@ Our Businesses Section
 
 <div class="footer" id="place-footer">
 	<script>
-        $("#place-footer").load("/footer.html");
+        $("#place-footer").load("/footer");
 	</script>
 </div>
 
@@ -957,22 +951,29 @@ Our Businesses Section
 
 <!-- JavaScript Libraries -->
 <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="./lib/superfish/superfish.min.js"></script>
-<script src="./lib/wow/wow.min.js"></script>
-<script src="./lib/waypoints/waypoints.min.js"></script>
-<script src="./lib/counterup/counterup.min.js"></script>
-<script src="./lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="./lib/isotope/isotope.pkgd.min.js"></script>
-<script src="./lib/fancybox/js/jquery.fancybox.min.js"></script>
-<script src="./lib/touchSwipe/jquery.touchSwipe.min.js"></script>
-
-<!-- Contact Form JavaScript File -->
-<!--<script src="./contactform/contactform.js"></script>-->
+<!--<script src="./lib/superfish/superfish.min.js"></script>-->
+<!--<script src="./lib/wow/wow.min.js"></script>-->
+<!--<script src="./lib/waypoints/waypoints.min.js"></script>-->
+<!--<script src="./lib/counterup/counterup.min.js"></script>-->
+<!--<script src="./lib/owlcarousel/owl.carousel.min.js"></script>-->
+<!--<script src="./lib/isotope/isotope.pkgd.min.js"></script>-->
+<!--<script src="./lib/fancybox/js/jquery.fancybox.min.js"></script>-->
+<!--<script src="./lib/touchSwipe/jquery.touchSwipe.min.js"></script>-->
+<script src="./lib/compressed.min.js"></script>
 
 <!-- Template Main Javascript File -->
 
 <script src="./js/main.min.js"></script>
-<script src="./js/nav.js"></script>
+<script src="./js/nav.min.js"></script>
+<script src="/js/upup.min.js"></script>
+<script>
+    UpUp.start({
+        'content': '<html><body><h1>Chrysels Group</h1><p>This App requires an active Internet connection in order to function.</p><p>Please try again!</p></body></html>'
+    });
+</script>
+
+
+
 
 </body>
 

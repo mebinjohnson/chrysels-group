@@ -95,7 +95,7 @@
 	<script src="/lib/jquery/jquery.min.js"></script>
 </head>
 
-<body>
+<body style="background-color: #ffffff; background: none">
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -139,7 +139,7 @@
 						<h1 class="title-single2">Job Openings</h1>
 					</div>
 				</div>
-				<div class="col-md-12 col-lg-4">
+				<div class="col-md-8 col-lg-4">
 					<div aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item">
@@ -151,21 +151,77 @@
 						</ol>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</section>
 
-	<section class="section-bg wow fadeInUp" id="contact">
-		<div class="container">
-<!--			<iframe allowfullscreen-->
-<!--					height="1000px"-->
-<!--					src="https://recruit.zoho.in/recruit/Portal.na?iframe=false&digest=wIhGxZWPz34RGhCAcElZ.o31Mh27@pI60UHaKBvdapc-"-->
-<!--					style="border:0" width="100%">-->
+<!--	<section class="section-bg wow fadeInUp" id="contact">-->
+<!--		<div class="container">-->
+<!--			<div class="row">-->
+<!--				<div class="col-md-8 col-lg-8">-->
+<!--					<div class="row">-->
+<!--&lt;!&ndash;					<p>Thank you for your interest, but there are no job openings available here at this time. Please&ndash;&gt;-->
+<!--&lt;!&ndash;						check back at another time</p>&ndash;&gt;-->
+<!--					</div>-->
+<!--					<div class="card">-->
+<!--						<div class="card-header">Sales Executive & Marketing Executives</div>-->
+<!--						<div class="card-body">-->
+<!--							<p>Hiring Sales & Marketing Executives for <a href="/business/digital"> Chrysels Digital Advertising LLC.</a></p>-->
+<!--							<p>Professionals with a minimum of 2 years experience in the same field, good communication skills and an eye for detail and flair for production. Similar industry experience is an added advantage.</p>-->
+<!--						</div>-->
 
-<!--			</iframe>-->
-			<p>Thank you for your interest, but there are no job openings available here at this time. Please check back at another time</p>
-		</div>
-	</section><!-- #contact -->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="col-md-4 col-lg-4container form">-->
+<!--					<div id="sendmessage">Your message has been sent. Thank you!</div>-->
+<!--					<div id="errormessage"></div>-->
+<!--					<h3>Apply Here</h3>-->
+<!--					<form action="" class="contactForm" method="post" role="form">-->
+<!--						<div class="form-row">-->
+<!--							<div class="form-group col-md-12">-->
+<!--								<input class="form-control" data-msg="Please enter at least 4 chars" data-rule="minlen:4" id="name" name="name"-->
+<!--									   placeholder="Your Name" type="text"/>-->
+<!--								<div class="validation"></div>-->
+<!--							</div>-->
+<!--							<div class="form-group col-md-12">-->
+<!--								<input class="form-control" data-msg="Please enter a valid email" data-rule="email" id="email"-->
+<!--									   name="email" placeholder="Your Email"-->
+<!--									   type="email"/>-->
+<!--								<div class="validation"></div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="form-group">-->
+<!--							<input class="form-control" data-msg="Please enter at least 8 chars" data-rule="minlen:8" id="subject"-->
+<!--								   name="subject" placeholder="Position Applying"-->
+<!--								   type="text"/>-->
+<!--							<div class="validation"></div>-->
+<!--						</div>-->
+<!--						<div class="form-group">-->
+<!--								<input type="file" name="file-1[]" id="file" accept=".pdf, .docx, .doc" data-rule="uploadfile" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" hidden/>-->
+<!--								<label for="file"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Upload Resume&hellip;</span></label>-->
+<!--						</div>-->
+<!--						<div class="form-group">-->
+
+<!--							<textarea class="form-control" data-msg="Please write a note" data-rule="required" name="message"-->
+<!--									  placeholder="Additional Note / Cover" rows="4"></textarea>-->
+<!--							<div class="validation"></div>-->
+<!--						</div>-->
+
+<!--						<div class="text-center">-->
+<!--							<label title="Upload Resume">-->
+<!--								<input type="submit" value="Send Message"/>-->
+<!--							</label>-->
+<!--						</div>-->
+<!--					</form>-->
+<!--				</div>-->
+<!--			</div>-->
+
+<!--		</div>-->
+<!--	</section>&lt;!&ndash; #contact &ndash;&gt;-->
+	<section class="container pt-5">
+		<iframe target="_blank" src="https://chrysels.com/blog/?page_id=669" title="Job Portal" width="100%" height="100vh" frameborder="0" style="border: 0 ; height: 300vh; width: 100%"></iframe>
+	</section>
 
 </main>
 
@@ -190,7 +246,49 @@ Footer
 <script src="./lib/touchSwipe/jquery.touchSwipe.min.js"></script>
 
 <!-- Template Main Javascript File -->
+<script>
 
+    'use strict';
+    var uploadField = document.getElementById("file");
+    uploadField.onchange = function() {
+        if(this.files[0].size > 2097152){
+            alert("File is too big! Maximum allowed size is 2Mb.");
+            this.val('');
+        }
+        else {
+
+		}
+    };
+    ( function( $, window, document, undefined )
+    {
+        $( '.inputfile' ).each( function()
+        {
+            var $input	 = $( this ),
+                $label	 = $input.next( 'label' ),
+                labelVal = $label.html();
+
+            $input.on( 'change', function( e )
+            {
+                var fileName = '';
+
+                if( this.files && this.files[0].size > 2097152 )
+                    fileName = ( 'Re-upload Resume!' );
+                else if( e.target.value && this.files[0].size < 2097152 )
+                    fileName = e.target.value.split( '\\' ).pop();
+
+                if( fileName )
+                    $label.find( 'span' ).html( fileName );
+                else
+                    $label.html( labelVal );
+            });
+
+            // Firefox bug fix
+            $input
+                .on( 'focus', function(){ $input.addClass( 'has-focus' ); })
+                .on( 'blur', function(){ $input.removeClass( 'has-focus' ); });
+        });
+    })( jQuery, window, document );
+</script>
 <script src="./js/main.min.js"></script>
 <script src="./js/nav-non-landing.min.js"></script>
 
